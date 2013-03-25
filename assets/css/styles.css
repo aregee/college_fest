@@ -1,3 +1,88 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+    Now here is when interesting things start to appear.
+
+    We set up <body> styles with default font and nice gradient in the background.
+    And yes, there is a lot of repetition there because of -prefixes but we don't
+    want to leave anybody behind.
+*/
+
+/*
+    Now let's bring some text styles back ...
+*/
+b, strong { font-weight: bold }
+i, em { font-style: italic }
+
+/*
+    ... and give links a nice look.
+*/
+a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 0.1em;
+    background: rgba(255,255,255,0.5);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+    border-radius: 0.2em;
+
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+a:hover,
+a:focus {
+    background: rgba(255,255,255,1);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+}
+
+
 /*-------------------------
 	Simple reset
 --------------------------*/
@@ -15,13 +100,12 @@
 
 
 html{
-	background:url('../img/bg.jpg') #fff;
+	background:url('../img/bg.jpg') no-repeat;
 }
 
 body{
-
 	min-height: 600px;
-    padding: 100px 0 50px;
+	padding: 100px 0 50px;
 	font:14px/1.3 'Segoe UI',Arial, sans-serif;
 	box-shadow:0 0 25px rgba(0,0,0,0.3) inset;
 	height:100%;
@@ -41,10 +125,33 @@ section, footer{
 	display: block;
 }
 
+section, header{
+    display: block;
+}
 
 /*----------------------------
 	Styling the presentation
 -----------------------------*/
+.fallback-message {
+    font-family: sans-serif;
+    line-height: 1.3;
+
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+
+    border: 1px solid #E4C652;
+    border-radius: 10px;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-supported .fallback-message {
+    display: none;
+}
 
 
 #impress:not(.impress-not-supported) .step{
@@ -52,10 +159,12 @@ section, footer{
 }
 
 #impress .step{
-	width:700px;
-	height: 900px;
+	width:800px;
+	height:400px;
+	
 	position:relative;
 	margin:0 auto;
+	
 	
 	-moz-transition:1s opacity;
 	-webkit-transition:1s opacity;
@@ -63,22 +172,26 @@ section, footer{
 }
 
 #impress .step.active{
-	opacity:1;
+	opacity:0.9;
 }
 
-.slide {
+#impress .slide {
     display: block;
 
-    width: 800px;
-    height: 500px;
-    padding: 40px 60px;
+    width: 600;
+    height: 400;
 
-    background-color:;
+    padding: 40px 60px;
+    
+    
+    background-color:#111111;
+    opacity: 0.8;
     border: 0px solid rgba(0, 0, 0, .3);
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
 
     color: rgb(102, 102, 102);
+   
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-family: 'Open Sans', Arial, sans-serif;
@@ -86,6 +199,7 @@ section, footer{
     line-height: 36px;
     letter-spacing: -1px;
 }
+
 
 
 #impress h2{
@@ -106,6 +220,49 @@ section, footer{
 	position:absolute;
 	z-index:1;
 }
+ 
+#impress .grep{
+	width:900px;
+	height: 600px;
+	
+	position:relative;
+	margin:0 auto;
+	
+	
+	-moz-transition:1s opacity;
+	-webkit-transition:1s opacity;
+	transition:1s opacity;
+}
+
+#impress .grep.active{
+	opacity:0.9;
+}
+
+
+.glide {
+    
+    width: 1000px;
+    height: 400px;
+
+    padding: 40px 60px;
+    
+    
+    background-color:#111111;
+    opacity: 1.8;
+    border: 0px solid rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+
+    color: rgb(102, 102, 102);
+   
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: -1px;
+}
+
 
 .arrow{
 	width:32px;
@@ -149,10 +306,11 @@ section, footer{
 /* A CUSTOM CLASS */
 
 #new {
+    width:600px;
     text-aligin:center;
     font-size: 50px;
     line-height: 1;
-    top:250px;
+    top:10px;
     
 }
 
@@ -180,7 +338,7 @@ section, footer{
     text-aligin:center;
     font-size: 50px;
     line-height: 1;
-    top:250px;
+   
     
 }
 
@@ -207,14 +365,15 @@ section, footer{
 -----------------------------*/
 
 #intro {
-    top: 190px;
+   
     width: 600px;
-    text-align: left;
+    text-aligin:left;
     font-size: 60px;
     line-height: 1;
     
 }
 #intro q {
+    text-aligin:center;
     color: red;
     display: block;
     font-size:90px;
@@ -338,44 +497,12 @@ width: 500px
 -----------------------------*/
 
 
-#impress #reff{
-        top: 200px;
+#reff{
+     
 	width: 650px;
 }
 
-#reff h2{
-    left: 0;
-    text-align: relative;
-    top: 180px;
-    font-size:60px;
-    color:white;
-}
 
-#reff p{
-        color: white;
-        font-size: 40px;
-	left: 32px;
-    top: 200px;
-    width: 480px;
-}
-
-
-#reff q{
-    color: red;
-    display:block;
-    font-size:50px;
-    top:300px;
-}
-
-#reff img{
-    right: 0;
-    top: 30px;
-}
-
-#title {
-    top: 900px;
-    padding: 0;
-}
 
 #title .try {
     font-size: 64px;
@@ -409,9 +536,11 @@ width: 500px
 -----------------------------*/
 
 
+
 footer{
 	background-color: #111111;
 	bottom: 0;
+	opacity:1;
 	box-shadow: 0 -1px 2px #111111;
 	height: 45px;
 	left: 0;
@@ -454,4 +583,21 @@ footer a i{
 footer a i b{
 	color:#c92020;
 	font-weight: normal;
+}
+
+
+header
+{
+	background-color: Black;
+	opacity:1;
+	box-shadow: 0 -1px 2px #111111;
+	height: 68px;
+	left: 0;
+	top:0;
+	bottom:0;
+	position: fixed;
+	width: 100%;
+	z-index: 100000;
+
+
 }

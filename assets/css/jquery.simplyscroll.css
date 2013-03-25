@@ -179,21 +179,21 @@ Note all DIVs are generated and should not be hard-coded
 /* Vertical scroller example */
 
 .vert { /* wider than clip to position buttons to side */
-	width: 430px;
-	height:420px;
+	width: 340px;
+	height:280px;
 	margin-bottom:1.5em;
 }
 
 	.vert .simply-scroll-clip {
-		width: 430px;
-		height: 420px;
+		width: 340px;
+		height: 280px;
 	}
 	
 		.vert .simply-scroll-list {}
 		
 		.vert .simply-scroll-list li {
-			width: 430px;
-			height: 420px;
+			width: 340px;
+			height: 280px;
 		}
 		.vert .simply-scroll-list li img {}
 	
