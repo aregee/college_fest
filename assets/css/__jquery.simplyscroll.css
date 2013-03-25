@@ -137,22 +137,22 @@ Note all DIVs are generated and should not be hard-coded
 */
 
 .simply-scroll { /* Customisable base class for style override DIV */
-	width: 340px;
-	height: 140px;
-	margin-bottom: 0.3em;
+	width: 430px;
+	height: 420px;
+	margin-bottom: 1em;
 }
 
 	.simply-scroll .simply-scroll-clip {
-		width: 340px;
-		height: 140px;
+		width: 430px;
+		height: 420px;
 	}
 	
 		.simply-scroll .simply-scroll-list {}
 		
 		.simply-scroll .simply-scroll-list li {
 			float: left;
-			width: 340px;
-			height: 140px;
+			width: 290px;
+			height: 200px;
 		}
 		.simply-scroll .simply-scroll-list li img {}
 	
@@ -180,20 +180,20 @@ Note all DIVs are generated and should not be hard-coded
 
 .vert { /* wider than clip to position buttons to side */
 	width: 340px;
-	height: 400px;
-	margin-bottom: 1.5em;
+	height:280px;
+	margin-bottom:1.5em;
 }
 
 	.vert .simply-scroll-clip {
-		width: 290px;
-		height: 400px;
+		width: 340px;
+		height: 280px;
 	}
 	
 		.vert .simply-scroll-list {}
 		
 		.vert .simply-scroll-list li {
-			width: 290px;
-			height: 200px;
+			width: 340px;
+			height: 280px;
 		}
 		.vert .simply-scroll-list li img {}
 	
@@ -215,3 +215,23 @@ Note all DIVs are generated and should not be hard-coded
 	
 	/* NOTE left-right classes wouldn't be needed on vertical scroller */
 
+.rvert { /* wider than clip to position buttons to side */
+	width: 480px;
+	height:160px;
+	margin-bottom:1.5em;
+}
+
+	.rvert .simply-scroll-clip {
+		width: 480px;
+		height: 160px;
+	}
+	
+		.rvert .simply-scroll-list {}
+		
+		.rvert .simply-scroll-list li {
+			width: 480px;
+			height: 160px;
+		}
+		.rvert .simply-scroll-list li img {}
+	
+	
