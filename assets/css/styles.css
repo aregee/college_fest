@@ -91,7 +91,7 @@ a:focus {
 
 
 html{
-	background:url('../img/bg.jpg') no-repeat;
+	background:url('../img/bg.jpg') ;
 }
 
 body{
@@ -306,7 +306,7 @@ section, header{
 }
 
 #new q{
-    color: red;
+    color: darkblue;
     display:block;
     font-size:90px;
     top:200px;
@@ -327,16 +327,16 @@ section, header{
 
 #event {
     text-aligin:center;
-    font-size: 50px;
+   
     line-height: 1;
    
     
 }
 
 #event q{
-    color: red;
+    color:darkblue;
     display:block;
-    font-size:50px;
+    font-size:90px;
     top:350px;
 }
 
@@ -365,7 +365,7 @@ section, header{
 }
 #intro q {
     text-aligin:center;
-    color: red;
+    color: darkblue;
     display: block;
     font-size:90px;
 }
@@ -398,90 +398,6 @@ section, header{
 	top: 120px;
 }
 
-/*----------------------------
-	Slide 2 - talk
------------------------------*/
-
-
-#talk{
-	width: 675px;
-
-}
-
-#talk h2{
-	left: 0;
-	top: 135px;
-	width: 400px;
-}
-
-#talk p{
-	left: 50px;
-    text-align: justify;
-    text-indent: 46px;
-    font-size: 40px;
-    top: 345px;
-    width: 365px;
-}
-
-#talk q {
-    top: 123px;
-    color: red;
-    display: block;
-    font-size:90px;
-}
-#talk img{
-	right: 0;
-    top: 30px;
-}
-
-
-/*----------------------------
-	Slide 3 - Venu
------------------------------*/
-
-
-#impress #venue{
-    
-	width: 560px;
-}
-
-#venue h2{
-	left: 0;
-	top: 370px;
-	width: 100%;
-	text-align:center;
-}
-
-#venue p{
-	left:50%;
-	margin-left:-245px;
-    text-align: left;
-    top: 460px;
-    width: 490px;
-}
-
-#venue img{
-	right: 0;
-    top: 50px;
-}
-
-#impress fling { 
-width: 500px 
-}
-#fling h2 {
-        left: 0;
-	top: 370px;
-	width: 100%;
-	text-align:center;
-}
-
-#fling p {
-	left:50%;
-	margin-left:-245px;
-    text-align: center;
-    top: 460px;
-    width: 490px;
-}
 
 /*----------------------------
 	Slide 4 - Upload
