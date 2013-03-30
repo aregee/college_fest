@@ -1,0 +1,492 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+    Now here is when interesting things start to appear.
+
+    We set up <body> styles with default font and nice gradient in the background.
+    And yes, there is a lot of repetition there because of -prefixes but we don't
+    want to leave anybody behind.
+*/
+
+/*
+    Now let's bring some text styles back ...
+*/
+b, strong { font-weight: bold }
+i, em { font-style: italic }
+
+/*
+    ... and give links a nice look.
+*/
+
+a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 0.1em;
+    background: rgba(255,255,255,0.5);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+    border-radius: 0.2em;
+
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+a:hover,
+a:focus {
+    background: rgba(255,255,255,1);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+}
+
+
+div { 
+   
+       border-radius: 0.2em;
+
+}
+
+p { 
+
+          border-radius: 0.2em;
+}
+/*-------------------------
+	General Styles
+--------------------------*/
+
+
+html{
+	background:url('../img/bg.jpg') ;
+}
+
+body{
+	min-height: 600px;
+	padding: 100px 0 50px;
+	font:14px/1.3 'Segoe UI',Arial, sans-serif;
+	box-shadow:0 0 25px rgba(0,0,0,0.3) inset;
+	height:100%;
+}
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+	color:#54a6de;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+section, footer{
+	display: block;
+}
+
+section, header{
+    display: block;
+}
+
+/*----------------------------
+	Styling the presentation
+-----------------------------*/
+.fallback-message {
+    font-family: sans-serif;
+    line-height: 1.3;
+
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+
+    border: 1px solid #E4C652;
+    border-radius: 10px;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-supported .fallback-message {
+    display: none;
+}
+
+
+#impress:not(.impress-not-supported) .step{
+	opacity:0.4;
+}
+
+#impress .step{
+	width:800px;
+	height:400px;
+	
+	position:relative;
+	margin:0 auto;
+	
+	
+	-moz-transition:1s opacity;
+	-webkit-transition:1s opacity;
+	transition:1s opacity;
+}
+
+#impress .step.active{
+	opacity:0.9;
+}
+
+#impress .slide {
+    display: block;
+
+    width: 600;
+    height: 400;
+
+    padding: 40px 60px;
+    
+    
+    background-color:#111111;
+    opacity: 0.8;
+    border: 0px solid rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+
+    color: rgb(102, 102, 102);
+   
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1px;
+}
+
+
+
+#impress h2{
+	font: normal 44px/1.5 'PT Sans Narrow', sans-serif;
+	color:red;
+	position:absolute;
+	z-index:10;
+}
+
+#impress p{
+	font: normal 18px/1.3 'Open Sans', sans-serif;
+	color: black;
+	position:absolute;
+	z-index:10;
+}
+
+#impress img{
+	position:absolute;
+	z-index:1;
+}
+ 
+#impress .grep{
+	width:900px;
+	height: 600px;
+	
+	position:relative;
+	margin:0 auto;
+	
+	
+	-moz-transition:1s opacity;
+	-webkit-transition:1s opacity;
+	transition:1s opacity;
+}
+
+#impress .grep.active{
+	opacity:0.9;
+}
+
+
+.glide {
+    
+    width: 1000px;
+    height: 400px;
+
+    padding: 40px 60px;
+    
+    
+    background-color:#111111;
+    opacity: 1.8;
+    border: 0px solid rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+
+    color: rgb(102, 102, 102);
+   
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: -1px;
+}
+
+
+
+/* A CUSTOM CLASS */
+
+#new {
+    width:600px;
+    text-aligin:center;
+    font-size: 50px;
+    line-height: 1;
+    top:10px;
+    
+}
+
+#new q{
+    color: darkblue;
+    display:block;
+    font-size:90px;
+    top:200px;
+}
+
+#new p{
+    font-size: 22px;
+    line-height: 1.6;
+    top: 190px;
+    white-space: nowrap;
+    font: normal 18px/1.3 'Open Sans', sans-serif;
+    color: black;
+    position:absolute;
+    z-index:10;
+}
+
+/* A CUSTOM CLASS */
+
+#event {
+    text-aligin:center;
+   
+    line-height: 1;
+   
+    
+}
+
+#event q{
+    color:darkblue;
+    display:block;
+    font-size:90px;
+    top:350px;
+}
+
+#event p{
+    font-size: 22px;
+    line-height: 1.6;
+    top: 190px;
+    white-space: nowrap;
+    font: normal 18px/1.3 'Open Sans', sans-serif;
+    color: black;
+    position:absolute;
+    z-index:10;
+}
+
+/*----------------------------
+	Slide 1 - Intro
+-----------------------------*/
+
+#intro {
+   
+    width: 600px;
+    text-aligin:left;
+    font-size: 60px;
+    line-height: 1;
+    
+}
+#intro q {
+    text-aligin:center;
+    color: darkblue;
+    display: block;
+    font-size:90px;
+}
+
+#intro b {
+    display: block;
+    font-size: 25px;
+    line-height: 40px;
+    top:190px;
+}
+
+#intro .thoughts {
+    font-size: 90px;
+    line-height: 150px;
+}
+
+
+#intro p{
+    font-size: 22px;
+    line-height: 1.6;
+    top: 190px;
+    white-space: nowrap;
+    font: normal 18px/1.3 'Open Sans', sans-serif;
+    color: black;
+    position:absolute;
+    z-index:10;
+}
+
+#intro img{
+	top: 120px;
+}
+
+
+/*----------------------------
+	Slide 4 - Upload
+-----------------------------*/
+@font-face {
+  font-family: "AngelicWar";
+  src: url("../AngelicWar.ttf") format("truetype");
+}
+
+h1 {
+/*  font-family: "AngelicWar";*/
+    font-size:60px;
+}
+
+#reff{
+     
+	width: 650px;
+}
+
+#reff q {
+    font-family: "AngelicWar";
+    font-size:60px;
+}
+
+#title .try {
+    font-size: 64px;
+    position: absolute;
+    top: -0.5em;
+    left: 1.5em;
+
+    -webkit-transform: translateZ(20px);
+    -moz-transform:    translateZ(20px);
+    -ms-transform:     translateZ(20px);
+    -o-transform:      translateZ(20px);
+    transform:         translateZ(20px);
+}
+
+#title h1 {
+    font-size: 190px;
+
+    -webkit-transform: translateZ(50px);
+    -moz-transform:    translateZ(50px);
+    -ms-transform:     translateZ(50px);
+    -o-transform:      translateZ(50px);
+    transform:         translateZ(50px);
+}
+
+#title .footnote {
+    font-size: 32px;
+}
+
+/*----------------------------
+	The Footer
+-----------------------------*/
+
+
+
+footer{
+	background-color: #111111;
+	bottom: 0;
+	opacity:1;
+	box-shadow: 0 -1px 2px #111111;
+	height: 45px;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 100000;
+}
+
+footer h2{
+	color: #EEEEEE;
+	font-size: 14px;
+	font-weight: normal;
+	left: 50%;
+	margin-left: -400px;
+	padding: 13px 0 0;
+	position: absolute;
+	width: 540px;
+}
+
+footer h2 i{
+	font-style:normal;
+	color:#888;
+}
+
+footer a.tzine,a.tzine:visited{
+	color: #999999;
+	font-size: 12px;
+	left: 50%;
+	margin: 16px 0 0 110px;
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+}
+
+footer a i{
+	color:#ccc;
+	font-style: normal;
+}
+
+footer a i b{
+	color:#c92020;
+	font-weight: normal;
+}
+
+
+header
+{
+	background-color: Black;
+	opacity:1;
+	box-shadow: 0 -1px 2px #111111;
+	height: 68px;
+	left: 0;
+	top:0;
+	bottom:0;
+	position: fixed;
+	width: 100%;
+	z-index: 100000;
+
+
+}
