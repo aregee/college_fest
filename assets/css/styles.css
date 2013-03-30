@@ -74,6 +74,8 @@ a.green.button {
 -webkit-animation-iteration-count: infinite;
 }
 
+
+
 a {
     color: #fff;
     background-color:#3D72A4;
@@ -401,6 +403,13 @@ section, header{
 h1 {
 /*  font-family: "AngelicWar";*/
     font-size:60px;
+}
+
+
+h1.life {
+-webkit-animation-name: 
+-webkit-animation-duration: 2s;
+-webkit-animation-iteration-count: infinite;
 }
 
 #reff{
