@@ -62,14 +62,30 @@ i, em { font-style: italic }
     ... and give links a nice look.
 */
 
-a {
-    color: inherit;
-    text-decoration: none;
-    padding: 0 0.1em;
-    background: rgba(255,255,255,0.5);
-    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
-    border-radius: 0.2em;
+@-webkit-keyframes redPulse {
+from { background-color:darkBlue; -webkit-box-shadow: 0 0 9px deepSkyblue; }
+50% { background-color: deepSkyblue; -webkit-box-shadow: 0 0 18px #3D72A4; }
+to { background-color: darkblue; -webkit-box-shadow: 0 0 9px deepSkyblue; }
+}
 
+a.green.button {
+-webkit-animation-name:redPulse;
+-webkit-animation-duration: 2s;
+-webkit-animation-iteration-count: infinite;
+}
+
+
+
+a {
+    color: #fff;
+    background-color:#3D72A4;
+   /* text-decoration: none;*/
+    padding: 0 0.1em;
+  /*  background: rgba(255,255,255,0.5);*/
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.9); 
+    border-radius: 0.2em;
+    
+    
     -webkit-transition: 0.5s;
     -moz-transition:    0.5s;
     -ms-transition:     0.5s;
@@ -82,6 +98,12 @@ a:focus {
     background: rgba(255,255,255,1);
     text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
 }
+
+
+iframe {
+    border-radius: 0.4em;
+}
+
 
 
 div { 
@@ -264,44 +286,6 @@ section, header{
 }
 
 
-.arrow{
-	width:32px;
-	height:54px;
-	background:url('../img/arrows.png') no-repeat;
-	position:fixed;
-	top:50%;
-	margin-top:-27px;
-	cursor:pointer;
-	text-indent:-9999px;
-	overflow:hidden;
-	opacity:0.8;
-	border:none !important;
-	text-decoration:none !important;
-	
-	-moz-transition:0.2s opacity;
-	-webkit-transition:0.2s opacity;
-	transition:0.2s opacity;
-}
-
-.arrow:hover{
-	opacity:1;
-}
-
-#arrowLeft{
-	left:45px;
-}
-
-#arrowRight{
-	right:45px;
-	background-position:top right;
-}
-
-/* Hide the arrows if impress is not supported */
-
-#impress.impress-not-supported + .arrow,
-#impress.impress-not-supported + .arrow + .arrow{
-	display:none;
-}
 
 /* A CUSTOM CLASS */
 
@@ -419,6 +403,13 @@ section, header{
 h1 {
 /*  font-family: "AngelicWar";*/
     font-size:60px;
+}
+
+
+h1.life {
+-webkit-animation-name: 
+-webkit-animation-duration: 2s;
+-webkit-animation-iteration-count: infinite;
 }
 
 #reff{
