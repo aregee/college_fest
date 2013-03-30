@@ -84,7 +84,16 @@ a:focus {
 }
 
 
+div { 
+   
+       border-radius: 0.2em;
 
+}
+
+p { 
+
+          border-radius: 0.2em;
+}
 /*-------------------------
 	General Styles
 --------------------------*/
@@ -402,14 +411,25 @@ section, header{
 /*----------------------------
 	Slide 4 - Upload
 -----------------------------*/
+@font-face {
+  font-family: "AngelicWar";
+  src: url("../AngelicWar.ttf") format("truetype");
+}
 
+h1 {
+/*  font-family: "AngelicWar";*/
+    font-size:60px;
+}
 
 #reff{
      
 	width: 650px;
 }
 
-
+#reff q {
+    font-family: "AngelicWar";
+    font-size:60px;
+}
 
 #title .try {
     font-size: 64px;
