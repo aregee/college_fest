@@ -64,5 +64,4 @@ This file is part of Fest.js.
     
 ### 5. Running in the Wild:
 
-
-    Vist : <http://aregee.github.com/college_fest>
+Check out : <http://aregee.github.com/college_fest>
