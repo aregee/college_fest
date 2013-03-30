@@ -63,9 +63,9 @@ i, em { font-style: italic }
 */
 
 @-webkit-keyframes redPulse {
-from { background-color: red; -webkit-box-shadow: 0 0 9px red; }
-50% { background-color: darkRed; -webkit-box-shadow: 0 0 18px darkRed; }
-to { background-color: red; -webkit-box-shadow: 0 0 9px red; }
+from { background-color: darkblue; -webkit-box-shadow: 0 0 20px blue; }
+50% { background-color: blue; -webkit-box-shadow: 0 0 18px deepSkyblue; }
+to { background-color: darkblue; -webkit-box-shadow: 0 0 9px blue; }
 }
 
 a.green.button {
