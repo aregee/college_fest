@@ -79,9 +79,9 @@ a.green.button {
 a {
     color: #fff;
     background-color:#3D72A4;
-   /* text-decoration: none;*/
+    text-decoration: none;
     padding: 0 0.1em;
-  /*  background: rgba(255,255,255,0.5);*/
+   
     text-shadow: -1px -1px 2px rgba(100,100,100,0.9); 
     border-radius: 0.2em;
     
@@ -92,6 +92,7 @@ a {
     -o-transition:      0.5s;
     transition:         0.5s;
 }
+ 
 
 a:hover,
 a:focus {
@@ -175,11 +176,8 @@ section, header{
     display: none;
 }
 
-
-#impress:not(.impress-not-supported) .step{
-	opacity:0.4;
+.impress-enabled .step{
 }
-
 #impress .step{
 	width:800px;
 	height:400px;
@@ -406,11 +404,6 @@ h1 {
 }
 
 
-h1.life {
--webkit-animation-name: 
--webkit-animation-duration: 2s;
--webkit-animation-iteration-count: infinite;
-}
 
 #reff{
      
@@ -506,7 +499,7 @@ footer a i b{
 
 header
 {
-	background-color: Black;
+	background-color: transparent;
 	opacity:1;
 	box-shadow: 0 -1px 2px #111111;
 	height: 68px;
@@ -519,3 +512,5 @@ header
 
 
 }
+
+
