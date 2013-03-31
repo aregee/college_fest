@@ -1,9 +1,8 @@
 
-
 #Fest.JS
 
 ============
-Written Mostly in HTML5 CSS3 and intensly using JavaScrip Libraries specially lot of impress.js !
+Written Mostly in HTML5 CSS3 and intensively using JavaScript Libraries specially lot of impress.js !
 This is a website for Techelon 2013 - annual tech fest of my College and the whole website is OpenSource you may fork it and use  it for your own purpose ,just don't forget to push back your code to GitHub ;) 
 
 ## Table Of Contents
@@ -44,7 +43,7 @@ This file is part of Fest.js.
    For running locally on *nix machines use :
 
         $ cd fest.js 
-   	$ ./serve port_ number
+    	$ ./serve port_ number
 	
    For production server, just place  fest.js in your var/www/	then url redirects to http://yourdomain.com/fest.js/
 
@@ -64,5 +63,9 @@ This file is part of Fest.js.
     
 ### 5. Running in the Wild:
 
+<<<<<<< HEAD
 
     Vist : <http://aregee.github.com/college_fest>
+=======
+Check out : <http://aregee.github.com/college_fest>
+>>>>>>> 2461a064914ecb36420a28e5f59a5b64979afdcb
