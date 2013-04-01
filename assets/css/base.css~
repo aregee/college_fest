@@ -1,0 +1,24 @@
+.carousel {
+	
+        border 10px solid black;
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+	-ms-transform: rotate(1deg);
+	-o-transform: rotate(1deg);
+	transform: rotate(1deg);
+
+	filter: progid:DXImageTransform.Microsoft.Matrix( M11=0.9986295347545738, M12=-0.05233595624294383, M21=0.05233595624294383, M22=0.9986295347545738, sizingMethod='auto expand');
+	zoom:1;
+	-webkit-box-shadow: 10px 10px 20px #002624;
+	-moz-box-shadow: 10px 10px 20px #002624;
+	box-shadow: 10px 10px 20px #002624;
+        max-width:800px;
+	
+}
+ 
+.carousel .item {
+
+	max-height: 400px;
+	
+}
+

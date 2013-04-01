@@ -11,8 +11,10 @@
     position: relative;
     height: 65px;
     left: 0;
-    top:0;
+    top:5px;
     bottom:0;
+    border-radius: 1.9em;/*0 5px 5px 5px;*/
+    border-width: 0 1px 1px
     position: fixed;
     width: 100%;
     z-index: 100000;
@@ -20,7 +22,7 @@
 }
 #nav ul {
     background-color: #222;
-    border:1px solid #222;
+    border:3px solid #222;
     border-radius: 0 5px 5px 5px;
     border-width: 0 1px 1px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
@@ -64,9 +66,17 @@
     text-decoration: none;
     text-shadow: 1px 1px 1px #000000;
 }
-#nav li h1 {
-    font-size:60px;
-}
+#nav li h1 a {
+	display: block; text-decoration: none;
+	font: 50px Helvetica, Arial, Sans-Serif; letter-spacing: -3px;  
+	text-align:center;
+	margin-top:-18px;
+
+	color: #999; text-shadow: 0px 3px 8px #2a2a2a;
+ }
+ 	h1 a:hover {
+ 		color: #a0a0a0; text-shadow: 0px 5px 8px #2a2a2a;
+ 	}
 
 #nav li:hover ul.subs {
     left: 0;

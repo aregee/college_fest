@@ -102,7 +102,14 @@ a:focus {
 
 
 iframe {
-    border-radius: 0.4em;
+    border-radius: 0.9em;
+    border: 10px solid black;
+      
+
+    -webkit-box-shadow: 10px 10px 20px #002624;
+    -moz-box-shadow: 10px 10px 20px #002624;
+    box-shadow: 10px 10px 20px #222;
+
 }
 
 
@@ -189,6 +196,14 @@ section, header{
 	-moz-transition:1s opacity;
 	-webkit-transition:1s opacity;
 	transition:1s opacity;
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+	-ms-transform: rotate(1deg);
+	-o-transform: rotate(1deg);
+	transform: rotate(1deg);
+    
+
+
 }
 
 #impress .step.active{
