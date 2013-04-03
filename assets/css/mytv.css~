@@ -1,0 +1,75 @@
+tt {font-size: 3em; text-align: center; 
+	color: #327; 
+	text-shadow: 0px 0px 5px #333;}
+
+#TVcontainer {
+	width: 340px; height: 200px; /* width = width of "outerEdge" ; height = heights of "outerEdge" + "post" + "base" */ 
+	margin: 0 auto; 
+	position: relative; 
+	margin-top: 50px;
+}
+
+
+/* All of the TV Components are below. Names should be self explanatory as to what they are. */
+
+.outerEdge {
+	margin: 0 auto;
+	width: 340px; height: 203px; /*Change these in relation to the div below */
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	box-shadow: 0px 0px 5px #999 inset;
+	-moz-box-shadow: 0px 0px 2px #999 inset;
+	-webkit-box-shadow: 0px 0px 5px #999 inset;
+	background: rgba(225,225,225, 0.8);
+}
+
+.outerBox {
+	margin: 0 auto;
+	position: relative; top:1px;
+	width: 347px; height: 208px; /*Change these in relation to the div below */
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0px 0px 5px #000 inset, 0px 0px 25px #912222 inset;
+	-moz-box-shadow: 0px 0px 5px #000 inset, 0px 0px 25px #912222 inset;
+	-webkit-box-shadow: 0px 0px 5px #000 inset, 0px 0px 25px #912222 inset;
+	background: -moz-linear-gradient(#202020, #181818); 
+	background: -webkit-gradient(linear, left bottom, right top, from(#202020), to(#181818));
+}
+
+.TVscreen {
+	z-index:12;
+	width: 300px; height: 170px;
+	box-shadow: 2px 2px 2px #000 inset, 2px 2px 2px #a1a1a1;
+	-moz-box-shadow: 2px 2px 2px #000 inset, 2px 2px 2px #a1a1a1;
+	-webkit-box-shadow: 2px 2px 2px #000 inset, 2px 2px 2px #a1a1a1;
+	background: -moz-linear-gradient(left top, #505050, #303030);
+	background: -webkit-gradient(linear, left top, right bottom, from(#505050), to(#303030));
+	position: relative;
+	left: 20px; top: 18px;
+ }  
+
+.glare {
+	position: absolute;
+	top: 0px; left: 0px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin: 0 auto;
+	z-index:10;
+	width: 300px; height: 150px;
+	background: -moz-linear-gradient(left top, rgba(255,255,255, 0.4) 0%, rgba(255,255,255, 0.075) 35%, rgba(255,255,255, 0) 35%, rgba(255,255,255, 0) 100%); 
+	background: -webkit-gradient(linear, left top, 550 200, from(rgba(255,255,255, 0.4)), to(rgba(255,255,255, 0)), color-stop(0.5, rgba(255,255,255, 0.075)), color-stop(0.5, rgba(255,255,255, 0)));  
+}
+
+.TVname {
+	position: relative;
+	bottom: 20px;
+	font: bold 0.7em arial;
+	letter-spacing: 0.3em;
+	text-align: center;
+	color: rgba(200,200,200, 1);
+	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.3)), to(rgba(180,180,180,0.2)), color-stop(0.5, rgba(150,150,150,1)), color-stop(0.5, rgba(102,102,102,1)), color-stop(0.51, rgba(120,120,120,0.5)));
+	text-shadow: 1px 1px 0px #000; 
+}

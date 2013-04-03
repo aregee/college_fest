@@ -9,10 +9,12 @@
     font-size: 12px;
     padding: 0 0 0 9px;
     position: relative;
-    height: 65px;
+    height: 60px;
     left: 0;
-    top:0;
+    top:5px;
     bottom:0;
+    border-radius: 1.9em;/*0 5px 5px 5px;*/
+    border-width: 0 1px 1px
     position: fixed;
     width: 100%;
     z-index: 100000;
@@ -64,9 +66,18 @@
     text-decoration: none;
     text-shadow: 1px 1px 1px #000000;
 }
-#nav li h1 {
-    font-size:60px;
-}
+#nav li h1 a {
+	display: block; text-decoration: none;
+	font-family: 'Special Elite', cursive;
+	text-align:center;
+	margin-top:-18px;
+	font-size:40px;
+
+	color: #999; text-shadow: 0px 3px 8px #2a2a2a;
+ }
+ 	h1 a:hover {
+ 		color: #a0a0a0; text-shadow: 0px 5px 8px #2a2a2a;
+ 	}
 
 #nav li:hover ul.subs {
     left: 0;
@@ -90,6 +101,8 @@
 #nav li:hover > a {
     color: #00B4FF;
 }
+
+
 #nav li:hover, #nav a:focus, #nav a:hover, #nav a:active {
     background: none repeat scroll 0 0  transparent;/* #121212; */
     outline: 0 none;
@@ -125,25 +138,25 @@ a img {
 }
 
 #nav li:nth-of-type(1):hover ~ #lavalamp {
-    left: 210px;
+    left: 100px;
 }
 #nav li:nth-of-type(2):hover ~ #lavalamp {
-    left: 270px;
+    left: 280px;
 }
 #nav li:nth-of-type(3):hover ~ #lavalamp {
-    left: 340px;
+    left: 360px;
 }
 #nav li:nth-of-type(4):hover ~ #lavalamp {
-    left: 420px;
+    left: 460px;
 }
 #nav li:nth-of-type(5):hover ~ #lavalamp {
-    left: 500px;
-}
-#nav li:nth-of-type(6):hover ~ #lavalamp {
     left: 580px;
 }
+#nav li:nth-of-type(6):hover ~ #lavalamp {
+    left: 680px;
+}
 #nav li:nth-of-type(7):hover ~ #lavalamp {
-    left: 660px;
+    left: 780px;
 }
 #nav li:nth-of-type(8):hover ~ #lavalamp {
     left: 740px;

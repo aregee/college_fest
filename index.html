@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <meta charset="utf-8" />
+
+	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
         <title>fest.js</title>
-        <link href="assets/css/jquery.simplyscroll.css" rel="stylesheet" type="text/css" />
-	
+        
+      <link href="assets/css/jquery.simplyscroll.css" rel="stylesheet" type="text/css" />
+      <link href="assets/css/mytv.css" rel="stylesheet" type="text/css" />
+      <link href="assets/css/tool.css" rel="stylesheet" type="text/css" />
+
 	<link href="assets/css/js-image-slider.css" rel="stylesheet" type="text/css" />
-<!--	 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:300" /> -->
         <link rel="stylesheet" href="assets/css/styles.css" />
 	<link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+
+	    <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+   <link href="assets/css/base.css" rel="stylesheet" media="screen">
 <header>
 
 <ul id="nav">
-               <li><h1 style="color:darkBlue; font-family:AngelicWar; fonts-size:190px;background-color:transparent;margin-left:25px;" href="/">Techelon'13</h1></li>            <li><a style="background-color:transparent;" href="#/reff">Home</a></li>
+  
+                <li><h1 style="margin-left:-20px;"><a href="#/reff" style="background-color:transparent;">Techelon'13</a></h1></li>
+         
+              <!--  <li><a style="background-color:transparent;" href="#/reff">Home</a></li>-->
                 <li><a class="hsubs"  style="background-color:transparent;" href="#/intro">About</a> </li>
                 <li><a class="hsubs" href="#/new" style="background-color:transparent;">Events</a>
-                    <ul class="subs">
-                        <li><a href="#/new" style="background-color:transparent;">View More!</a></li>
-                        
-                    </ul>
                 </li>
                 <li><a class="hsubs" href="#/sponsors" style="background-color:transparent;">Sponsors</a>
                                     </li>
                 <li><a href="#/gallery" style="background-color:transparent;">Gallery</a></li>
                 <li><a href="#/title" style="background-color:transparent;">Venue</a></li>
                 <li><a href="#/feedback" style="background-color:transparent;">PlaceHolder</a></li>
-<a class="metro-tile green button" style="cursor: pointer; width: 105px; height: 35px; display: inline; float: right; margin-top:10px; margin-bottom:10px; margin-right:70px;border-radius: 1.8em;" href="#/register"><center style="margin-top:10px"><b style="color:white">Sign Up ! </b></center></a>
-               
-<a href="mailto:rahul.nbg@gmail.com" target="MyNewWindow" style="background-color:transparent;" ><img src="assets/img/mail.png" height="40" width="40" class="metro-tile"></a>
-<a href="https://www.facebook.com/techelonfest" target="MyNewFestWindow" style="background-color:transparent;" ><img src="assets/img/fb.png" height="40" width="40" class="metro-tile"></a>
+
+<a href="mailto:rahul.nbg@gmail.com" target="MyNewWindow" style="background-color:transparent;float:left;margin-left:-49px;" ><img src="assets/img/mail.png" height="40" width="40" class="metro-tile"></a>
+<a href="https://www.facebook.com/techelonfest" target="MyNewFestWindow" style="background-color:transparent;flota:left; margin-left:-99px;" ><img src="assets/img/fb.png" height="40" width="40" class="metro-tile"></a>
+<a class="metro-tile green button" style="cursor: pointer; width: 105px; height: 35px; display: inline; float:left; margin-top:10px; margin-bottom:10px;margin-right:-450px;margin-left:30px;border-radius: 1.8em;" href="#/register"><center style="margin-top:10px"><b style="color:white">Sign Up ! </b></center></a>
+
+
                 <div id="lavalamp"></div>
 
 		
@@ -50,23 +61,24 @@
 
 <!-- METRO UI implementation -->
 <div id="metro-array" class="glide" style="display: inline-
-block;">
+block; background-color:transparent;">
 
 <div style="width: 340px; height: 230px; float: left; ">
 
-							<a class="metro-tile" style="cursor: pointer; width: 360px; height: 210px;font-size:30px; display: block; background-color: deepSkyBlue; color: #fff; margin-bottom: 10px; margin-left:-30px;" href="#/intro"><br><br>
-<center><q>TECHELON'13</q> </center>
-<i style="color:white; font-family:AngelicWar; font-size:30px;margin-left:130p;">a Tech Arena !</i>
+							<a href="#/intro" class="metro-tile" style="cursor: pointer; width: 360px; height: 210px; display: block; background-color:black ; color: #4D4DFF; margin-bottom: 10px; margin-left:-30px;opacity:0.7;"><br><br>
+<center><q style="font-size:80px;font-family:AngelicWar;transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;">TECHELON'13</q> </center>
+<i style="font-family:Share Tech Mono; font-size:20px;margin-left:130p;">The Technical  Arena !</i>
 							</a>
 
-							<a class="metro-tile" style="cursor: pointer; width: 360px; height: 190px; display: block; background-color: purple; margin-left:-30px; color: #fff;" href="#/sponsors">
-							  <h3 style="color:white; font-family:AngelicWar; font-size:40px;">Sponsors</h3>
+							<a href="#/sponsors" style="cursor: pointer; width: 360px; height: 190px; display: block; background-color: purple; margin-left:-30px; color: #fff;opacity:0.7" >
+							  <h3 style="color:white; font-family: 'Special Elite', cursive; font-size:24px;">Sponsors</h3>
 <ul id="hscroller">
 <li>Events Powered by</li>
-<li><img src="assets/img/com.png" height="140"></li>
-
+<li><img src="assets/img/com.png" width="80" height="130"/></li>
 <li> Gifts Powered by</li>
-<li><img src="assets/img/com.jpg" height="140"></li>
+<li><img src="assets/img/com.jpg" width="80" height="130"/></li>
 
 
 </ul>							</a>
@@ -74,17 +86,31 @@ block;">
 
 						<div style="width: 340px; height: 230px; float: left; margin-left: 10px">
 
-							<a class="metro-tile" style="cursor: pointer; width: 340px; height: 200px; display: block; background-color: darkRed; color: #fff; margin-bottom:10px;" >
-			<center><h3 style="color:white; font-family:AngelicWar; font-size:40px;">NEWS !</h3></center>
-			<ul id="scroller">
-<li>HELLO PEOPELE NEWS FOR Y</li>
-<li>HELLO PEOPELE NEWS FOR YO</li>
-<li>HELLO PEOPELE NEWS FOR YO00</li>
-</ul>
-							</a>
-<a id="sliderFrame" class="metro-tile" style="cursor: pointer; width:auto; height: 200px; display: block; background-color:transparent; color: #fff" href="#/gallery">
+<div class="metro-tile TVcontainer" style="cursor: pointer;margin-bottom:10px;">
+
+<div class="outerEdge" style="opacity:1.8;">
+		<div class="outerBox">
+			<div class="TVscreen" style="opacity:1.8;">
+<b style="font-size: .9em; text-align:left; 
+	color: #393; 
+	text-shadow: 0px 0px 5px #393;">[root@linuxstation Register]# </b>
+			  <ul id="scroller">
+			 <li><a href="https://docs.google.com/forms/d/1CGad3fGrhHCTYr5a4YyJW5tor7vTOfcmD1iVF7iwA1w/viewform" target="MyNewWindow" style="color:#396;background-color:transparent;">Igneuity</a></li>
+			 <li><a href="https://docs.google.com/forms/d/1MRf7VFQofR1JrjaySuKtCqifuTFF1BbsWUhzFyAQy2k/viewform" target="MyNewWindow" style="color:#396;background-color:transparent;">LanBastards</a></li>
+			 <li><a href="https://docs.google.com/forms/d/1E2V49Jx61cM_AsyP3eQeapzgJLmGqDHc6UJ3y4c-ppE/viewform
+" target="MyNewWindow" style="color:#396;background-color:transparent;">Brainstorm</a></li>
+			</ul>
+
+		</div>
+			</div>
+			<h1 class="TVname">Fest UpDates!</h1>
+		</div>
+
+
+							</div>
+<a href="#/gallery" id="sliderFrame" class="metro-tile" style="cursor: pointer; width:340px; height: 200px; display: block; background-color:transparent;border-radius:0.8em; color: #fff" >
         
-        <div id="slider">
+        <div id="slider" style="border-radius:0.8em;">
            
             <img src="assets/img/photos/img_0.jpg" alt="Techelon 2013" />
 	     <img src="assets/img/photos/img_1.jpg" alt="Techelon 2013" />
@@ -95,16 +121,14 @@ block;">
 		  <img src="assets/img/photos/img_6.jpg" alt="Techelon 2013" />
 		  <img src="assets/img/photos/img_7.jpg" alt="Techelon 2013" />
 		   <img src="assets/img/photos/img_8.jpg" alt="Techelon 2013" />
-		    <img src="assets/img/photos/img_9.jpg" alt="Techelon 2013" />
 		     <img src="assets/img/photos/img_10.jpg" alt="Techelon 2013" />
-		      <img src="assets/img/photos/img_11.jpg" alt="Techelon 2013" />
-		       <img src="assets/img/photos/img_12.jpg" alt="Techelon 2013" />
+		     
 		       <img src="assets/img/photos/img_13.jpg" alt="Techelon 2013" />
 		        <img src="assets/img/photos/img_14.jpg" alt="Techelon 2013" />
 			 <img src="assets/img/photos/img_15.jpg" alt="Techelon 2013" />
                  </div>
         <div id="htmlcaption" style="display: none;">
-            <em>this is sexo</em> <a href="#/gallery"> slide </a>
+            <em>o</em> <a href="#/gallery"> slide </a>
         </div>
     </div>
 						
@@ -114,26 +138,31 @@ block;">
 
 						<div style="width: 300px; height: 300px; float: left; margin-left: 10px">
 
-	<div class="metro-tile" style="cursor: pointer; width: 320px; height: 280px; display: block; text-decoration: none; padding: 0 0.1em;border-radius: 0.2em; background-color: darkBlue; color: #fff; margin-bottom: 10px;margin-right:-30px;" href="#/new">
-	  <h3 style="color:white; font-family:AngelicWar; font-size:40px;">Events at Techelon</h3>
+	<div style="cursor: pointer; width: 320px; height: 280px; display: block; text-decoration: none; padding: 0 0.1em;border-radius: 0.8em; background-color: #118C4E; color: #fff; margin-bottom: 10px;margin-right:-30px;opacity:0.9">
+	  <h3 style="color:white;font-family: 'Special Elite', cursive;font-size:25px;">Events at Techelon</h3>
 <div>
 <ul>
 <b><li style="text-aligin:left"><a href="#/event3" style="color:white;padding:0; background: none;text-shadow: 0.3;border-radius:0;">EQ</a></li>
 <li><a href="#/event4" style="color:white;padding:0; background: none;text-shadow: 0.3;border-radius:0;"> Ingenuity</a></li>
-<li><a href="#/event1" style="color:white;padding:0; background: none;text-shadow: 0.3;border-radius:0;"><b>Code Jam</b></a></li>
+<li><a href="#/event1" style="color:white;padding:0; background: none;text-shadow: 0.3;border-radius:0;">Code Jam</a></li>
 <li><a href="#/event2" style="color:white;padding:0; background: none;text-shadow: 0.3;border-radius:0;">LAN Gaming</a></li>
 <li><a href="#/event5" style="color:white;padding:0; background: none;text-shadow: 0.3;border-radius:0;">Robo Games</a></li>
- <li><a href="#/new" style="color:white;padding:0; background: none;text-shadow: 0.3;border-radius:0;">More !</a></li>
+ <li><a href="#/new" style="color:white;padding:0; background: none;text-shadow: 0.3;border-radius:0; font-size:18px;">More !</a></li>
 </b></ul></div>
 
 							</div>
 
-<a class="metro-tile" style="cursor: pointer; width: 170px; height: 120px; margin-right: 5px;
- display: block; float: left; background-color: deepPink; color: #fff;" href="#/title">
-<br><i style="color:white; font-family:AngelicWar; font-size:30px;margin-left:130p;"> Venue!</i>  						</a>
+<a style="cursor: pointer; width: 170px; height: 120px; margin-right: 5px;border-radius:1.8em;
+ display: block; float: left;opacity:0.8; background-color: #7D1935; color: #fff;font-family: 'Special Elite', cursive;"  href="#/title">
+<center style="margin-top:40px;"> Venue! </center>
+</a>  						
 
-							<a class="metro-tile" style="cursor: pointer; width: 140px; height: 120px; display: block; background-color: orange;background: url('assets/img/git.png');float: right; margin-right:-30px; color: darkBlue;" href="https://github.com/aregee/college_fest/" target="MyNewWindow">
-		FORK US <br> on <br> GitHUb					</a>
+
+<span class="hotspot" onmouseover="tooltip.show('This is an Open Source Project,head over to github to learn more about this project  **FOSS**');" onmouseout="tooltip.hide();"><a class="metro-tile" style="cursor: pointer; width: 140px; height: 120px; display: block; background-color: orange;opacity:0.8;background: url('assets/img/git.png');float: right; margin-right:-30px; color: darkBlue;" href="https://github.com/aregee/college_fest/" target="MyNewWindow">
+ 
+		
+FORK Me <br> on <br> GitHUb	
+</a></span>
 						</div>
 
 
@@ -142,30 +171,85 @@ block;">
 </div>
 
 <!-- METRO TILES UI ENDS HERE-->
+<!-- VENUE / teaser SLide -->
+	  <div id="title" class="step" data-x="6000" data-y="0" data-scale="1" style="opacity:1;color:black;">
 
-	  <div id="title" class="step" data-x="-1800" data-y="0" data-scale="2" style="opacity:1;color: black;">
+        <span class="try" style="color:#118C4E;font-family: 'Share Tech Mono', sans-serif;">17th April - </span>
+        <h1 style="color:#4D4DFF; font-family:AngelicWar;">Techelon<sup>*</sup></h1>
+        <span class="footnote" style="font-family: 'Share Tech Mono', sans-serif;color:white;"><sup>*</sup> @ S.C.R.I.E.T , MEERUT </span>
 
-        <span class="try">DATE</span>
-        <h1>Techleon<sup>*</sup></h1>
-        <span class="footnote"><sup>*</sup> @ S.C.R.I.E.T </span>
-
-<center><div class="metro-tile"> <a href="#/intro" style="color:black">Read More</a></div></center> 
+<center><div> <a href="#/intro" style="color:black">Read More</a></div></center> 
    
  </div>
-		  
-		  <div id="intro" class="step slide" data-x="0" data-y="0" style="color:white">
-<center><q><b style="font-size:90px">Techlon 2013</b></q> </center>
-		 <br>
-	 <b>SCRIET gears up for Techelon 2012, the technical
-fiesta of challenging and ever so inquisitive events.
-The event will be carried out from April 9 to April 11, 2012 with 15 different technical events and many more fun events.This melee provides you a great opportunity to communicate your
-product information and deliverables to the students of SCRIET</b>
+<!-- ABout SLIDES -->		  
 
-<center><div class="metro-tile"> <a href="#/new" style="color:black;margin-top:350px;font-size:20px;" >Events</a></div></center>
+		  <div id="intro" class="step slide" data-x="0" data-y="0" style="color:white">
+
+<div class="metro-tile"  style="cursor:pointer; width: 320px; height:100px; display: block; float:left;">
+<center><q style="font-size:30px;color:#4EB1BA">Techlon 2013</q> </center>
+<b style="font-size:13px;">Techelon is an annual science and technology festival hosted by Sir Chhotu Ram Institute of Engineering and Technology, C.C.S. University, Meerut.
+Started with the aim of providing a platform for students to develop and showcase their technical prowess, it has now become an intercollege affair and is one of its kind.
+</b>
+</div>
+<div style="float:left;margin-top:300px;margin-left:-200px;"><a href="#/tech" style="color:black;font-size:20px;" >Read More!</a>
+</div>
+<div class="metro-tile" style="cursor:pointer; width: 320px; height: 200px; display: block; float:right;">
+<center><q style="font-size:20px;color:#4EB1BA">SCRIET Cultural Scociety</q> </center>
+<b style="font-size:13px;">Sir Chhotu Ram Institute of Engineering and Technology’s cultural society, popularly known as SCS, is a student body that is responsible for organizing all the events happening in the college round the year, including the annual technical fest ‘Techelon’ and the annual charity ‘Aashayein’.
+</b>
+</div>
+<div style="float:right;margin-top:300px;margin-right:-200px;"><a href="#/scs" style="color:black;font-size:20px;"> Read More!</a>
+</div>
+
 </div>		    
 	    
+<!-- nested Slides for about pages techelon -->
+
+<div id="tech" class="step slide" data-x="0" data-y="1000" data-scale="1" data-rotate="0" style="color:white; font-size:15px">
+<center><q style="font-size:30px;color:#4EB1BA">Techlon 2013</q> </center>
+<b>Techelon is an annual science and technology festival hosted by Sir Chhotu Ram Institute of Engineering and Technology, C.C.S. University, Meerut.
+Started with the aim of providing a platform for students to develop and showcase their technical prowess, it has now become an intercollege affair and is one of its kind.
+At techelon, we aim at encouraging the young talents to exhibit and exchange their innovative ideas and skills in the field of science and technology through various activities like engineering quiz, robo gaming, technical PPT, group discussions, working model presentation, to name a few.
+ Techelon also features a varied range of fun events that might make you experience a euphoric high.
+All in all, it not only gives a huge amount of experience but also serves as a pedestal to the path of glory by enabling the students to set a benchmark in the engineering revolution.</b>
+
+<center>
+<a href="#/intro" style="color:black;font-size:20px;"> UP ?</a>
+</center>
+
+</div>
+
+
+<!-- nested Slides for about pages SCS ! -->
+
+<div id="scs" class="step slide" data-x="0" data-y="2000" data-scale="1" data-rotate="0" style="color:white; font-size:15px">
+<center><q style="font-size:30px;color:#4EB1BA">Scriet Cultural Society</q> </center>
+<div>
+<b>Sir Chhotu Ram Institute of Engineering and Technology’s cultural society, popularly known as SCS, is a student body that is responsible for organizing all the events happening in the college round the year, including the annual technical fest ‘Techelon’ and the annual charity ‘Aashayein’.
+SCS aims at providing a platform to the students to exhibit their talents and creativity in varied fields, ensuring an overall enhancement of their personalities.</b>
+<center><b>SCS comprises of six clubs to take care of the varied fields of events.</b></center>
+
+ <table width=100%, height=50%>
+      <tr>
+        <th><span class="hotspot" onmouseover="tooltip.show('<strong>The literature Club</strong>: This club organizes events such as debate, extempore, group discussion, article writing, script writing, drama, etc. The annual college magazine is a result of this club’s hard work.');" onmouseout="tooltip.hide();"> ALECTIX </span> </th>
+        <th><span class="hotspot" onmouseover="tooltip.show('<strong>The Event celeberation Club</strong>:This club is responsible for organizing every event happening in the college. It ensures smooth working on stage as well as off stage and also helps the other clubs to execute their activities successfully.');" onmouseout="tooltip.hide();"> PERISTIWA </span></th>
+        <th><span class="hotspot" onmouseover="tooltip.show('<strong>The Fine arts Club</strong>:This club is for the students who have interest and talent in art, painting, sketching, photography and the likes. The event publicity is an important feature of this club.');" onmouseout="tooltip.hide();"> KALAKRITI </span></th>
+	<th><span class="hotspot" onmouseover="tooltip.show('<strong>The Technical Club</strong>: This club enables students to test their technical skills through activities like quiz, technical papers, seminars, workshops, robo wars etc... Helping them to learn the practical aspects of engineering.');" onmouseout="tooltip.hide();"> AUTONETIX </span></th>
+	<th><span class="hotspot" onmouseover="tooltip.show('<strong>The entertainment club </strong> :The club aims to explore the entertaining side of students through activities such as singing, dancing, instrument playing, etc.');" onmouseout="tooltip.hide();"> NIRVANA </span> </th>
+	<th><span class="hotspot" onmouseover="tooltip.show('<strong>The Sports Club</strong>:This club aims to unify the sporting talents of students. The club organizes competitions in different sports to inculcate team spirit and sportsmanship.');" onmouseout="tooltip.hide();"> ADRENALINE </span></th>
+      </tr>
+          
+</table>
+<a href="#" style="background-color:transparent;"> <span class="hotspot" onmouseover="tooltip.show('Visit The SCS website and learn how to get involved with us');" onmouseout="tooltip.hide();"> More About SCS </span> </a>
+<br>
+<center><a href="#/intro" style="float:center;margin-top:400px;color:black;font-size:20px;"> UP ?</a></center>
+</div>
+</div>
+
+
+
 <div id="new" class="step slide" data-x="1500" data-y="0" data-scale="1" data-rotate="0" style="color:white; font-size:20px">
-   <center><q><b>EVENTS</b></q></center><br>
+<center><q>EVENTS</q></center><br>
 <div style="cursor:pointer; width: 320px; height: 280px; display: block; float:left;">
  <ul>
 <li><a href="#/event1" style="color:black">Code Jam (test for programming skills)</a></li>
@@ -174,7 +258,7 @@ product information and deliverables to the students of SCRIET</b>
 <li><a href="#/event4" style="color:black"> Ingenuity (Article writing)</a></li>
 <li><a href="#/event5" style="color:black">Robo Games</a></li>
 <li><a href="#/event6" style="color:black">Case Tech</a></li>
-<li><a href="#/event7" style="color:black">Ad Mad</a></li>
+<li><a href="#/event7" style="color:black">AD-O-MANIA</a></li>
 </ul>
 
 </div>
@@ -200,12 +284,11 @@ product information and deliverables to the students of SCRIET</b>
 
 <!-- EVENT SLIDES -->
 <div id="event1" class="step slide" data-x="1500" data-y="3000" style="color:white; font-size:15px">
-<center> <q style="font-size:90px"><b>CODE JAM</b></q></center>
+<center> <q style="font-size:90px;">CODE JAM</q></center>
 
-<div class="metro-tile" style=" width: 320px; height: 280px; display: block; float:left;">
-<img src="assets/img/event/img_3.png" height="280">
 
-</div>
+<img class="metro-tile" style=" width: 320px; height: 280px; display: block; float:left;" src="assets/img/event/img_3.png" height="280">
+
 
 <div class="metro-tile" style="cursor: pointer; width: 320px; height: 280px; display: block; background-color:darkRed; float: right;">
 
@@ -217,11 +300,11 @@ product information and deliverables to the students of SCRIET</b>
 
 
 
-<center><div class="metro-tile" style="margin-top:300px;"> <a href="#/new" style="color:Black">BACK</a></div></center>
+<center><div style="margin-top:300px;"> <a href="#/new" style="color:Black">BACK</a></div></center>
 </div>
 
 <div id="event2" class="step slide" data-x="1500" data-y="6000" style="color:white; font-size:20px; opacity:1.8; background: url('assets/img/event/img_8.jpg') no-repeat;">
-<center> <q style="font-size:30px; margin-top:5px;"><b style="font-size:70px; color:darkBlue;">LAN BASTARDS!</b></q></center>
+<center> <q style="font-size:90px; color:darkBlue;margin-top:5px;">LAN BASTARDS!</q></center>
 <br>
 <p class="metro-tile" style="width: 320px; height: 280px; display:inline-block; float:left; color:white;">
 
@@ -243,13 +326,13 @@ Thanks a lot Read Rules & Regulations for more details :)
 
 </div>
 
-<center><div class="metro-tile" style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
+<center><div style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
 </div>
 
 
 
 <div id="event3" class="step slide" data-x="1500" data-y="9000" style="color:white; font-size:15px">
-<center> <q style="font-size:30px"><b>ENGINEERING QUIZ</b></q></center>
+<center> <q style="font-size:30px">ENGINEERING QUIZ</q></center>
 
 
 
@@ -263,7 +346,7 @@ Thanks a lot Read Rules & Regulations for more details :)
 
 </div>
 
-<center><div class="metro-tile" style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
+<center><div style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
 
 </div>
 
@@ -280,13 +363,13 @@ Thanks a lot Read Rules & Regulations for more details :)
 
 </div>
 
-<center><div class="metro-tile" style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
+<center><div style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
 
 </div>
 
 <div id="event5" class="step slide" data-x="1500" data-y="15000" style="color:white; font-size:15px">
 <center><q style="font-size:50px; color:darkBlue;">RoBoWAR</q></center>
-<div class="metro-tile" style="cursor:pointer; width: 320px; height: 280px; display: block; float:left;">
+<div style="cursor:pointer; width: 320px; height: 280px; display: block; float:left;">
 <q> EVENT IMAGE OR BIREF INFO</q>
 
 </div>
@@ -298,7 +381,7 @@ Thanks a lot Read Rules & Regulations for more details :)
 </ul>
 </div>
 
-<center><div class="metro-tile" style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
+<center><div style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
 
 </div>
 
@@ -321,25 +404,29 @@ Authentic ideas and findings would be given more consideration. working models a
 </ul>
 </div>
 
-<center><div class="metro-tile" style="margin-top:350px;"> <a href="#/new" style="color:black">BACK</a></div></center>
+<center><div style="margin-top:350px;"> <a href="#/new" style="color:black">BACK</a></div></center>
 
 </div>
 
-<div id="event7" class="step slide" data-x="1500" data-y="21000" style="color:white; font-size:15px">
-<center><q style="font-size:50px; color:darkBlue;">Event Seven</q></center>
-<div class="metro-tile" style="cursor:pointer; width: 320px; height: 280px; display: block; float:left;">
-<q> EVENT IMAGE OR BIREF INFO</q>
+<!-- AD_O_MANI-->
+
+<div id="event7" class="step slide" data-x="1500" data-y="21000" style="color:white; font-size:15px; background: url('assets/img/event/ad.jpg') no-repeat;">
+<center><q style="font-size:50px; color:darkBlue;">AD-O-MANIA</q></center>
+<div class="metro-tile" style="cursor:pointer; width: 320px; height: 280px; display: block; float:left;background-color:black;">
+<b> AD-O-MANIA   provides you an opportunity to showcase your innovative thinking, original ideas, perspectives and insights that make you stand apart from the crowd. 
+ So<i>Test your creativity in selling and marketing some random product given on the spot</i></b>
 
 </div>
 
-<div class="metro-tile" style="cursor: pointer; width: 320px; height: 280px; display: block; float:right;">
-<q> EVENT DESCRIPTION </q>
+<div style="cursor: pointer; width: 320px; height: 280px; display: block; float:right;">
+<q> Links ! </q>
 <ul>
-<li><a>LINKS TO REG,Signup etc</a></li>
+<li><a href="assets/docs/ad-o-mania.pdf" target="MyNewWindow" style="color:white;background-color:red;"> Views Rules & Schedule</a></li>
+<li><a class="metro-tile green button" href="https://docs.google.com/forms/d/1JC_FfvjvQx2hQTUgawZvgGWQAUSe5Nop2T0XmdbdBs0/viewform" target="MyRegisterWindow" style="margin-top:10px; color:white; font-size:30px; border-radius:1.8em;">Sign Up!</a></li>
 </ul>
 </div>
 
-<center><div class="metro-tile" style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
+<center><div style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
 
 
 </div>
@@ -358,7 +445,7 @@ Authentic ideas and findings would be given more consideration. working models a
 </ul>
 </div>
 
-<center><div class="metro-tile" style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
+<center><div style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
 
 
 </div>
@@ -379,7 +466,7 @@ Authentic ideas and findings would be given more consideration. working models a
 </ul>
 </div>
 
-<center><div class="metro-tile" style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
+<center><div style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
 
 
 
@@ -401,7 +488,7 @@ Authentic ideas and findings would be given more consideration. working models a
 <li><a>LINKS TO REG,Signup etc</a></li>
 </ul>
 </div>
-<center><div class="metro-tile" style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
+<center><div style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
 
 
 </div>
@@ -411,7 +498,7 @@ Authentic ideas and findings would be given more consideration. working models a
 
 <div id="event11" class="step slide" data-x="1500" data-y="33000" style="color:white; font-size:15px">
 <center><q style="font-size:50px; color:darkBlue;">Event Eight!</q></center>
-<div class="metro-tile" style="cursor:pointer; width: 320px; height: 280px; display: block; float:left;">
+<div style="cursor:pointer; width: 320px; height: 280px; display: block; float:left;">
 <q> EVENT IMAGE OR BIREF INFO</q>
 
 </div>
@@ -423,7 +510,7 @@ Authentic ideas and findings would be given more consideration. working models a
 </ul>
 </div>
 
-<center><div class="metro-tile" style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
+<center><div style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
 
 
 </div>
@@ -432,31 +519,54 @@ Authentic ideas and findings would be given more consideration. working models a
 <!-- SPONSORS PAGE -->
 <div id="sponsors" class="step slide" data-x="3000" data-y="0">
 <center>
-  <h1 style="opacity:1.8;color:darkblue;font-size:90px;">SPONSORS</h1></center>
+  <h1 style="opacity:1.8;color:darkblue;font-size:90px;font-family: 'Special Elite', cursive;">SPONSORS</h1></center>
 </div>
 
 <!-- PHOTO GALLERY -->
 
-<div id="gallery" class="step slide" data-x="6000" data-y="0" data-rotate="-176" style="opacity:1;">
 
-<iframe src ="JS_SLIDER/index.html" width="900" height="500" style="margin-top:-10px; margin-left:45px;">
-  <p>Your browser does not support iframes.</p>
-</iframe>
-
-</div>
-
-<div id="feedback" class="step " data-x="9000" data-y="0" data-rotate="120" style="opacity:1.0">
+<div id="gallery" class="step" data-x="9000" data-y="0" data-rotate="120" style="opacity:1.0">
 <center>
-  <iframe src="#" width="800" height="350" frameborder="0" marginheight="0" marginwidth="0" style="border-radius: 0.8em;">Loading...</iframe>
+  
+ <div id="myCarousel" class="carousel slide" style="background-color:transparent; width:990px;opacity:1.0;margin-left:-80px;">
+
+<center style="margin-top:-30px;">
+<div clas="container-fluid">
+<div class="carousel-inner" style="width:700px;height:380px;border:10px solid black;">
+    <div class="active item"><img src="JS_SLIDER/img/11.jpg"/>
+      <div class="carousel-caption">
+        <p>Techelon 2013</p>
+      </div>
+    </div>
+    <div class="item"><img src="JS_SLIDER/img/9.jpg"/></div>
+    <div class="item"><img src="JS_SLIDER/img/6.jpg"/></div>
+    <div class="item"><img src="JS_SLIDER/img/12.jpg"/></div>
+    <div class="item"><img src="JS_SLIDER/img/7.jpg"/></div>
+    <div class="item"><img src="JS_SLIDER/img/13.jpg"/></div>
+    <div class="item"><img src="JS_SLIDER/img/14.jpg"/></div>
+    <div class="item"><img src="JS_SLIDER/img/8.jpg"/></div>
+  </div>
+
+
+
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+</div> <!--fluid--> 
 </center>
-</div>        
+</div><!--carousel-->
+</center>
+</div><!-- impress.js-->        
+
+
+
 
 
 <!-- Register for Events Google Docs -->
 
 <div id="register" class="step slide" data-x="15000" data-y="0" data-z="-1000" style="color:white; font-size:15px">
 <center><q style="font-size:50px; color:darkBlue;">Sign Up For events!</q></center>
-<div class="metro-tile" style="cursor:pointer; width: 320px; height: 280px; display: block; float:left;">
+<div style="cursor:pointer; width: 320px; height: 280px; display: block; float:left;">
  <ul>
 <li><a href="#/event1" style="color:black">Code Jam (test for programming skills)</a></li>
 <li><a href="http://www.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1CGad3fGrhHCTYr5a4YyJW5tor7vTOfcmD1iVF7iwA1w%2Fviewform&h=7AQH9UzCs" target="MyNewWindow" style="color:black">LanBastards!</a></li>
@@ -469,7 +579,7 @@ Authentic ideas and findings would be given more consideration. working models a
 
 </div>
 
-<div class="metro-tile" style="cursor: pointer; width: 320px; height: 280px; display: block; float:right;">
+<div style="cursor: pointer; width: 320px; height: 280px; display: block; float:right;">
 
 <ul>
 <li><a href="#/event8" style="color:black">Caesar Speaks (the extempore)</a></li>
@@ -484,7 +594,7 @@ Authentic ideas and findings would be given more consideration. working models a
 
 </div>
 
-<center><div class="metro-tile" style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
+<center><div style="margin-top:300px;"> <a href="#/new" style="color:black">BACK</a></div></center>
 
 
 
@@ -493,18 +603,26 @@ Authentic ideas and findings would be given more consideration. working models a
 
 </div>
 
+<footer>
+<div>
+<div style="width:24%; height:20%; background-color:#DC5B21;float:right;color:#E4DBBF;border-radius:3.8em;postion:relative;">
+<p style="margin-left:20px;margin-top:3px;font-size:10px;float:left;"> ©Techelon '13 | S.C.R.I.E.T | WebSite by:<a href="http://rahulgaur.info" target="MyNewWindow" style="font-size:10px;text-decoration:none;background-color:transparent;"><span class="hotspot" onmouseover="tooltip.show('hello ,I am the dev of this project');" onmouseout="tooltip.hide();">aregee </span></a></p>
+</div>
+</div>
+</footer>
 
 	<!-- JavaScript includes -->
+<script src="assets/js/jquery-1.7.1.min.js"></script>
 
-	<script src="assets/js/jquery-1.7.1.min.js"></script>
-	
-		<script src="assets/js/impress.js"></script>
-		<script>impress().init();</script>
-		<script src="assets/js/tileJs.js" type="text/javascript"></script>
-		<script src="assets/js/script.js"></script>
+<script src="assets/js/impress.js"></script>
+	<script>impress().init();</script>
+	<script src="assets/js/tileJs.js" type="text/javascript"></script>
+		<script src="assets/js/tooltip.js"></script>
+	<!--	<script src="assets/js/script.js"></script> -->
 		<script src="assets/js/js-image-slider.js" type="text/javascript"></script>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js">
-</script>
+		
+    <script src="assets/js/bootstrap.js"></script>
+
 		<script type="text/javascript" src="assets/js/jquery.simplyscroll.js"></script>
 		<script type="text/javascript">
 (function($) {
@@ -521,6 +639,11 @@ Authentic ideas and findings would be given more consideration. working models a
 })(jQuery);
 </script>
 
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+</script>
 
     </body>
 </html>
